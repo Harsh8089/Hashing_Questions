@@ -10,7 +10,7 @@ In case multiple sequences result in the same minimum total cost, return the seq
 that is `lexicographically smallest`.
 
 Constraints: <br>
-1 <= n1, n2 <= 10^5
+1 <= n1, n2 <= 10^3
 
 `Test Case-1`: <br>
 Input: serverLoad = [3, 1, 2], serverCapacity = [4, 5, 6] <br> Output: [4, 6, 5] <br>
@@ -35,3 +35,25 @@ Explanation:<br> There exist multiple sequence which can minimise total cost.  <
 ```
 ## Q-2
 
+Given a string containing only `0`, `1` and `2`, find minimum operation required to convert a original string into a string with equal number of `0s` and `1s`. 
+<br>
+In one operation you can delete any character (`0`, `1` and `2`) from start of string or from the end of string.
+If it's not possible to convert into string with equal number of `0s` and `1s`, print `-1`.
+<br>
+`Note`: The length of converted string (i.e with equal number of `0s` and `1s`) should be greater than 0. 
+
+`Test Case-1`: <br>
+Input: str = "01201" <br> Output:0  <br>
+Explanation:<br> string str already contains equal number of 0's and 1's with a count = 2. 
+
+`Test Case-2`: <br>
+Input: str = "12011220112002" <br> Output: 1 <br>
+Explanation:<br> Delete `1` from start of the string. Resulting string str = "2011220112002", where count of 0's = 4 and count of 1's = 4.
+
+`Test Case-3`: <br>
+Input: str = "220" <br> Output: 1<br>
+Explanation:<br> Delete `0` from end of the string. Resulting string str = "22", where count of 0's = 0 and count of 1's = 0.
+
+`Test Case-4`: <br>
+Input: str = "00" <br> Output: -1<br>
+Explanation:<br> It's not possible to convert into string with equal number of 0's and 1's.
