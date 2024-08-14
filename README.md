@@ -10,7 +10,7 @@ In case multiple sequences result in the same minimum total cost, return the seq
 that is `lexicographically smallest`.
 
 `Constraints`: <br>
-1 <= n1, n2 <= 10^3
+1 <= n1, n2 <= 10^3 <br>
 1 <= elements of serverLoad and serverCapacity <= 10^9
 
 `Test Case-1`: <br>
