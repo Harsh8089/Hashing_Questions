@@ -9,8 +9,9 @@ In order to minimise the cost of server, you can `swap` the position of elements
 In case multiple sequences result in the same minimum total cost, return the sequence
 that is `lexicographically smallest`.
 
-Constraints: <br>
+`Constraints`: <br>
 1 <= n1, n2 <= 10^3
+1 <= elements of serverLoad and serverCapacity <= 10^9
 
 `Test Case-1`: <br>
 Input: serverLoad = [3, 1, 2], serverCapacity = [4, 5, 6] <br> Output: [4, 6, 5] <br>
@@ -41,6 +42,9 @@ In one operation you can delete any character (`0`, `1` and `2`) from start of s
 If it's not possible to convert into string with equal number of `0s` and `1s`, print `-1`.
 <br>
 `Note`: The length of converted string (i.e with equal number of `0s` and `1s`) should be greater than 0. 
+
+`Constraints`: <br>
+1 <= length(string) <= 10^5
 
 `Test Case-1`: <br>
 Input: str = "01201" <br> Output:0  <br>
